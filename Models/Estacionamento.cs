@@ -21,7 +21,7 @@ namespace SistemaEstacionamento.Models
         {
             // TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
             // *IMPLEMENTE AQUI*
-            Console.WriteLine("Digite a placa do veículo para estacionar:");
+            Console.WriteLine("Digite a placa do veículo para estacionar: Ex:AAA2A22");
             veiculos.Add(Console.ReadLine());
             Console.WriteLine(veiculos);
         }
@@ -43,10 +43,11 @@ namespace SistemaEstacionamento.Models
                 // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
                 // *IMPLEMENTE AQUI*
                 int horas = 0;
-                decimal valorTotal = 0; 
-
+                decimal valorTotal = precoInicial + precoPorHora; 
+        
                 // TODO: Remover a placa digitada da lista de veículos
                 // *IMPLEMENTE AQUI*
+                
 
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             }
